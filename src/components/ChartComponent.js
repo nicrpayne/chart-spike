@@ -8,30 +8,34 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //     });
 // });
 
-let myChart = document.getElementById('myChart').getContext('2d');
-let testChart = new Chart(myChart, {
-    type: 'bar', //bar, horizontalBar, pie, line, donut,  radar, polar area
-    data: {
-        labels: ['Minneapolis', 'St. Paul', 'Rochester', 'Duluth', ],
-        datasets: [{
-            label: 'population',
-            data: [
-                425403, 
-                307695, 
-                116961, 
-                85884
-            ]
 
-        }],
 
-    },
-    options: { }
-});
-console.log(testChart);
+
 
 
 class ChartComponent extends Component {
+    componentDidMount() {
+        let myChart = document.getElementById('myChart').getContext('2d');
+        let testChart = new Chart(myChart, {
+            type: 'bar', //bar, horizontalBar, pie, line, donut,  radar, polar area
+            data: {
+                labels: ['Minneapolis', 'St. Paul', 'Rochester', 'Duluth',],
+                datasets: [{
+                    label: 'population',
+                    data: [
+                        425403,
+                        307695,
+                        116961,
+                        85884
+                    ]
 
+                }],
+
+            },
+            options: {}
+        });
+        console.log(testChart);
+    }
 
     
     render() {

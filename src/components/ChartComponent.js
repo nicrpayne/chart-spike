@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Chart from 'chart.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // require(['moment'], function () {
 //     require(['chartjs'], function (Chart) {
 //         new Chart(ctx,);
@@ -25,8 +27,10 @@ let testChart = new Chart(myChart, {
     },
     options: { }
 });
+console.log(testChart);
 
-class Chart extends Component {
+
+class ChartComponent extends Component {
 
 
     
@@ -50,4 +54,4 @@ class Chart extends Component {
     }
 }
 
-export default Chart;
+export default ChartComponent;

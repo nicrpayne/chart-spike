@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Chart from '../src/components/ChartComponent'
+import ChartComponent from '../src/components/ChartComponent'
+// let Chart = require('chart.js');
+
 
 class App extends Component {
   render() {
@@ -21,7 +23,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <Chart/>
+        <ChartComponent/>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Chart from '../src/components/ChartComponent'
 
 class App extends Component {
   render() {

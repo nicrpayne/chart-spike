@@ -9,7 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends Component {
   render() {
     return (
+      <>
       <div className="App">
+        <>
         <header className="App-header">
           <ChartComponent />
           {/* <img src={logo} className="App-logo" alt="logo" />
@@ -25,8 +27,9 @@ class App extends Component {
             Learn React
           </a> */}
         </header>
-        
+        </>
       </div>
+      </>
     );
   }
 }
